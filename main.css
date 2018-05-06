@@ -149,7 +149,7 @@ a>img {
     width: 71%;
     display: grid;
     margin: 0 auto;
-    grid-template-columns: 1fr minmax(50%, 7fr) 1fr;
+    grid-template-columns: 1fr minmax(50%,7fr) 1fr;
     grid-template-areas: "aside1 article aside2";
     grid-gap: 13px 13px;
     line-height: 2em;
@@ -164,17 +164,19 @@ a>img {
     font-size: 3em;
     line-height: 1em;
     grid-column: 2/-2;
-    margin-top: 133px;
+    margin-top: 33px;
+    margin-bottom: 0;
+    grid-column: 1/-1;
 }
 
 .article>.sub-heading {
-    grid-column: 2/-2;
+    grid-column: 1/-1;
     margin:0;
     color: var(--acc);
 }
 
 .article>p {
-    margin: 33px 0;
+    padding: 0px 33px;
 }
 
 .article>figure {
@@ -202,7 +204,7 @@ a>img {
 }
 
 .article>blockquote {
-    grid-column: 1/-1;
+    grid-column: 1 / -1;
     font-weight: bold;
     font-size: 2.5em;
     line-height: 1.5em;
@@ -352,7 +354,7 @@ a>img {
     background: var(--bkgd);
     cursor: default;
     padding: 15px;
-    border-radius: 3px;
+    border-radius: 50%;
     background: none;
     transition: 0.5s;
     z-index: 3;
@@ -475,6 +477,7 @@ a>img {
         display: grid;
         margin: 0 auto;
         grid-template-columns: minmax(50%, 1fr);
+        grid-template-areas: none;
         grid-gap: 0;
         font-family: "montserrat", sans-serif;
         line-height: 2em;
@@ -495,6 +498,9 @@ a>img {
     .article>figure>figure-caption {
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
+    }
+    .article>p {
+        margin: 17px 0px;
     }
     #copyright {
         padding-left: 33px;
