@@ -83,27 +83,27 @@ window.addEventListener('resize', sizeCheck);
 ham.addEventListener('click', openMenu);
 
 // Gallery Controls
-// const overlay = document.querySelector('.overlay');
-// const container = document.querySelector('#container');
-// const overlayImage = overlay.querySelector('img');
-// const overlayClose = overlay.querySelector('.close');
+const overlay = document.querySelector('.overlay');
+const container = document.querySelector('#container');
+const overlayImage = overlay.querySelector('img');
+const overlayClose = overlay.querySelector('.close');
 
-// function handleClick(e) {
-//     const src = e.currentTarget.querySelector('img').src;
-//     overlayImage.src = src;
-//     container.classList.add('blur');
-//     overlay.classList.add('open');
-// }
+function handleClick(e) {
+    const src = e.currentTarget.querySelector('img').src;
+    overlayImage.src = src;
+    container.classList.add('blur');
+    overlay.classList.add('open');
+}
 
-// function close() {
-//     overlay.classList.remove('open');
-//     container.classList.remove('blur');
-// }
+function close() {
+    overlay.classList.remove('open');
+    container.classList.remove('blur');
+}
 
-// const works = document.querySelectorAll('.work');
-
-
-// works.forEach(work => work.addEventListener('click', handleClick));
+const works = document.querySelectorAll('.work');
 
 
-// overlayClose.addEventListener('click', close);
+works.forEach(work => work.addEventListener('click', handleClick));
+
+
+overlayClose.addEventListener('click', close);
