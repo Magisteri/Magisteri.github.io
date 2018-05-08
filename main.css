@@ -482,12 +482,29 @@ a>img {
         max-height: 700px;
     }
     .content-abt {
+        max-width: 90%;
         display: grid;
         grid-template-columns: 1fr;
-        grid-gap: 133px;
         line-height: 1.71em;
-        padding: 13px;
-        font-size: 1em;
+        font-size: .9em;
+    }
+
+    .msg{
+        padding: 33px;
+        max-width: 100%;
+    }
+
+    .msg>h1 {
+        font-size: 1.9em;
+    }
+
+    .skills{
+        padding: 33px;
+        max-width: 100%;
+    }
+    .soft {
+        padding: 33px;
+        max-width: 100%;
     }
     .article {
         min-width: 500px;
