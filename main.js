@@ -102,8 +102,5 @@ function close() {
 
 const works = document.querySelectorAll('.work');
 
-
 works.forEach(work => work.addEventListener('click', handleClick));
-
-
 overlayClose.addEventListener('click', close);

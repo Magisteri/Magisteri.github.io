@@ -156,6 +156,11 @@ a>img {
     grid-template-columns: 1.7fr 1fr 1fr 1fr;
     grid-gap: 100px;
     line-height: 1.71em;
+    color: var(--txt);
+}
+
+.msg {
+    color: var(--txt);
 }
 
 .article {
@@ -389,18 +394,25 @@ a>img {
     font-size: 20px;
     align-self: center;
     justify-self: end;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 13px;
 }
 
-#social>a {
-    color: var(--acc);
-    text-decoration: none;
-    letter-spacing: 10px;
-    transition: 0.2s ease-in-out;
+.insta {
+    width: 32px;
+    height: 32px;
+    fill: var(--acc);
 }
 
-#social>a:hover {
-    color: var(--txt);
-    font-size: 24px;
+.artstation {
+    width: 32px;
+    height: 32px;
+    fill: var(--acc);
+}
+
+a svg:hover {
+    fill: var(--txt);
 }
 
 @media screen and (max-width: 1080px) {
@@ -482,6 +494,7 @@ a>img {
         max-height: 700px;
     }
     .content-abt {
+        color: var(--txt);
         max-width: 90%;
         display: grid;
         grid-gap: 0;
@@ -492,6 +505,7 @@ a>img {
     .msg {
         padding: 33px;
         max-width: 100%;
+        color: var(--txt);
     }
     .msg>h1 {
         font-size: 1.7em;
