@@ -489,17 +489,18 @@ a>img {
         line-height: 1.71em;
         font-size: .9em;
     }
-
-    .msg{
+    .msg {
         padding: 33px;
         max-width: 100%;
     }
-
     .msg>h1 {
         font-size: 1.7em;
     }
-
-    .skills{
+    .ed {
+        padding: 33px;
+        max-width: 100%;
+    }
+    .skills {
         padding: 33px;
         max-width: 100%;
     }
