@@ -363,7 +363,7 @@ a>img {
     border-radius: 50%;
     background: none;
     transition: 0.5s;
-    z-index: 3;
+    z-index: 300;
 }
 
 #myBtn:hover {
@@ -496,7 +496,7 @@ a>img {
     }
 
     .msg>h1 {
-        font-size: 1.9em;
+        font-size: 1.7em;
     }
 
     .skills{
