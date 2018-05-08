@@ -484,6 +484,7 @@ a>img {
     .content-abt {
         max-width: 90%;
         display: grid;
+        grid-gap: 0;
         grid-template-columns: 1fr;
         line-height: 1.71em;
         font-size: .9em;
