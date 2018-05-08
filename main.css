@@ -117,7 +117,7 @@ ul li>a {
 }
 
 .current {
-    color:var(--txt)!important;
+    color: var(--txt) !important;
     text-decoration: underline;
 }
 
@@ -149,6 +149,13 @@ a>img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     z-index: 10;
+}
+
+.content-abt {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr;
+    grid-gap: 133px;
+    line-height: 1.71em;
 }
 
 .article {
@@ -473,6 +480,14 @@ a>img {
     .overlay-inner {
         max-width: 100%;
         max-height: 700px;
+    }
+    .content-abt {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 133px;
+        line-height: 1.71em;
+        padding: 13px;
+        font-size: 1em;
     }
     .article {
         min-width: 500px;
