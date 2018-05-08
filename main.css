@@ -46,7 +46,7 @@ body {
     -ms-user-select: none;
     user-select: none;
     border-bottom: 1px solid var(--acc);
-    z-index: 10;
+    z-index: 100;
 }
 
 nav {
@@ -116,6 +116,11 @@ ul li>a {
     color: var(--txt);
 }
 
+.current {
+    color:var(--txt)!important;
+    text-decoration: underline;
+}
+
 .jp {
     display: block;
     float: left;
@@ -140,8 +145,10 @@ a>img {
 }
 
 .content {
-    grid-template-rows: 1fr 1fr;
     margin-bottom: 13px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    z-index: 10;
 }
 
 .article {
@@ -149,7 +156,7 @@ a>img {
     width: 71%;
     display: grid;
     margin: 0 auto;
-    grid-template-columns: 1fr minmax(50%,7fr) 1fr;
+    grid-template-columns: 1fr minmax(50%, 7fr) 1fr;
     grid-template-areas: "aside1 article aside2";
     grid-gap: 13px 13px;
     line-height: 2em;
@@ -171,7 +178,7 @@ a>img {
 
 .article>.sub-heading {
     grid-column: 1/-1;
-    margin:0;
+    margin: 0;
     color: var(--acc);
 }
 
@@ -188,8 +195,6 @@ a>img {
 
 .article figure>img {
     width: 100%;
-    /* border-top-right-radius: 3px;
-    border-top-left-radius: 3px; */
 }
 
 .article>figure>figure-caption {
@@ -198,8 +203,6 @@ a>img {
     width: 100%;
     margin: 0;
     padding: 13px;
-    /* border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px; */
     line-height: 1em;
 }
 
@@ -220,13 +223,6 @@ a>img {
     border-top: 1px solid var(--acc);
     grid-column: 1/-1;
     font-size: 13px;
-}
-
-.thumbs {
-    margin-top: 13px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-gap: 13px;
 }
 
 .work {
@@ -255,7 +251,7 @@ a>img {
 }
 
 .work__overlay button {
-    color: var(--bkgd);
+    color: white;
     cursor: pointer;
     border: none;
     background: none;
@@ -306,17 +302,20 @@ a>img {
     display: grid;
     align-items: center;
     justify-items: center;
-    cursor: pointer;
 }
 
 .overlay-inner {
     background: var(--txt);
-    width: 75%;
     border-radius: 2px;
+}
+
+.overlay-inner {
+    max-width: 75%;
 }
 
 .overlay img {
     width: 100%;
+    max-height: 100%;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
 }
@@ -470,6 +469,9 @@ a>img {
     }
     #myBtn {
         bottom: 100px;
+    }
+    .overlay-inner {
+        max-width: 100%;
     }
     .article {
         min-width: 500px;
