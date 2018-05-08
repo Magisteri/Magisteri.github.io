@@ -539,6 +539,11 @@ a>img {
     .article>p {
         margin: 17px 0px;
     }
+
+    .work.item1 > img {
+        max-width: 100%;
+    }
+
     #copyright {
         padding-left: 33px;
     }
